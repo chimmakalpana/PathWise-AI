@@ -1,0 +1,188 @@
+import { InterviewQuestion } from '../types';
+
+export const interviewQuestions: InterviewQuestion[] = [
+  // Java Questions
+  {
+    id: 'q-java-1',
+    question: 'What is the difference between ArrayList and LinkedList?',
+    category: 'Java',
+    difficulty: 'Beginner',
+    sampleAnswer: 'ArrayList uses dynamic array internally and provides O(1) access but slower insertion/deletion. LinkedList uses doubly-linked list and provides faster insertion/deletion but O(n) access time.',
+    keywords: ['ArrayList', 'LinkedList', 'array', 'linked list', 'performance', 'insertion', 'deletion', 'access'],
+    explanation: 'This tests understanding of data structures and their trade-offs in memory and performance.',
+  },
+  {
+    id: 'q-java-2',
+    question: 'Explain the concept of exception handling in Java. What is the difference between checked and unchecked exceptions?',
+    category: 'Java',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'Exception handling allows graceful error management. Checked exceptions must be caught or declared (e.g., IOException). Unchecked exceptions inherit from RuntimeException and don\'t need to be caught (e.g., NullPointerException).',
+    keywords: ['exception', 'checked', 'unchecked', 'try-catch', 'throws', 'RuntimeException', 'IOException'],
+    explanation: 'This evaluates knowledge of error handling patterns and Java exception hierarchy.',
+  },
+  {
+    id: 'q-java-3',
+    question: 'What is the purpose of the "synchronized" keyword in Java?',
+    category: 'Java',
+    difficulty: 'Advanced',
+    sampleAnswer: 'The synchronized keyword is used for thread synchronization to prevent multiple threads from accessing the same resource simultaneously. It ensures thread-safety by allowing only one thread to execute synchronized code at a time.',
+    keywords: ['synchronized', 'thread-safe', 'concurrency', 'lock', 'monitor', 'multi-threaded'],
+    explanation: 'This assesses understanding of multi-threading and concurrency concerns.',
+  },
+
+  // Python Questions
+  {
+    id: 'q-python-1',
+    question: 'What is a decorator in Python and how do you use it?',
+    category: 'Python',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'A decorator is a function that modifies another function or class. It wraps the original function with additional functionality. Example: @decorator_name above a function definition.',
+    keywords: ['decorator', 'function', 'wrapper', '@', 'modify', 'functionality'],
+    explanation: 'Tests understanding of Python\'s advanced features and functional programming.',
+  },
+  {
+    id: 'q-python-2',
+    question: 'Explain list comprehension and its advantage over using for loops.',
+    category: 'Python',
+    difficulty: 'Beginner',
+    sampleAnswer: 'List comprehension is a concise way to create lists. Example: [x*2 for x in range(10)]. It\'s more readable, faster, and more memory efficient than using for loops with append().',
+    keywords: ['list comprehension', 'concise', 'readable', 'efficient', 'for loop', 'lambda'],
+    explanation: 'This evaluates Python-specific knowledge and writing clean code.',
+  },
+
+  // Web Development Questions
+  {
+    id: 'q-web-1',
+    question: 'What is the difference between let, const, and var in JavaScript?',
+    category: 'Web Development',
+    difficulty: 'Beginner',
+    sampleAnswer: 'var is function-scoped and hoisted. let and const are block-scoped. const cannot be reassigned after declaration, while let can be. const and let are preferred in modern JavaScript.',
+    keywords: ['let', 'const', 'var', 'scope', 'hoisting', 'reassign', 'block', 'function'],
+    explanation: 'Essential JavaScript knowledge for writing correct code.',
+  },
+  {
+    id: 'q-web-2',
+    question: 'Explain the concept of async/await in JavaScript.',
+    category: 'Web Development',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'async/await is syntactic sugar for promises. async function returns a promise. await pauses execution until the promise resolves, making async code look synchronous and more readable.',
+    keywords: ['async', 'await', 'promises', 'asynchronous', 'synchronous', 'resolve'],
+    explanation: 'Critical for handling asynchronous operations in modern JavaScript.',
+  },
+  {
+    id: 'q-web-3',
+    question: 'What is React and what are its key concepts?',
+    category: 'Web Development',
+    difficulty: 'Beginner',
+    sampleAnswer: 'React is a JavaScript library for building user interfaces. Key concepts: components (reusable pieces), JSX (HTML in JS), state (mutable data), props (immutable data passed to components), and the virtual DOM for efficient updates.',
+    keywords: ['React', 'components', 'JSX', 'state', 'props', 'virtual DOM', 'hooks'],
+    explanation: 'Fundamental React knowledge expected for frontend developer roles.',
+  },
+  {
+    id: 'q-web-4',
+    question: 'What is the difference between REST and GraphQL?',
+    category: 'Web Development',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'REST uses multiple endpoints returning fixed data structures. GraphQL uses a single endpoint where clients request exactly the data they need, reducing over-fetching and under-fetching of data.',
+    keywords: ['REST', 'GraphQL', 'endpoint', 'API', 'query', 'data', 'over-fetching'],
+    explanation: 'Tests understanding of modern API design patterns.',
+  },
+
+  // SQL Questions
+  {
+    id: 'q-sql-1',
+    question: 'Explain the different types of SQL joins.',
+    category: 'SQL',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'INNER JOIN returns matching records. LEFT JOIN includes all left table records. RIGHT JOIN includes all right table records. FULL OUTER JOIN includes all records from both tables.',
+    keywords: ['INNER JOIN', 'LEFT JOIN', 'RIGHT JOIN', 'FULL OUTER', 'join', 'tables'],
+    explanation: 'Essential SQL knowledge for database querying.',
+  },
+  {
+    id: 'q-sql-2',
+    question: 'What is database normalization and why is it important?',
+    category: 'SQL',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'Normalization organizes database to reduce redundancy and improve data integrity through normal forms (1NF, 2NF, 3NF). It minimizes data duplication and prevents anomalies.',
+    keywords: ['normalization', 'redundancy', 'integrity', 'normal form', '1NF', '2NF', '3NF'],
+    explanation: 'Critical for database design and maintenance.',
+  },
+
+  // Data Structures Questions
+  {
+    id: 'q-dsa-1',
+    question: 'What is a hash table and how does it handle collisions?',
+    category: 'Data Structures',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'A hash table uses a hash function to map keys to array indices. Collisions occur when multiple keys hash to the same index. Resolution techniques include chaining (linked lists) and open addressing (probing).',
+    keywords: ['hash table', 'collision', 'hash function', 'chaining', 'probing', 'index'],
+    explanation: 'Important for understanding efficient data structures.',
+  },
+  {
+    id: 'q-dsa-2',
+    question: 'Explain binary search and its time complexity.',
+    category: 'Data Structures',
+    difficulty: 'Beginner',
+    sampleAnswer: 'Binary search divides a sorted array in half repeatedly to find a target. Time complexity is O(log n). Requires sorted data. Much faster than linear search for large datasets.',
+    keywords: ['binary search', 'O(log n)', 'sorted', 'divide', 'half', 'efficient'],
+    explanation: 'Fundamental algorithm knowledge expected from all developers.',
+  },
+
+  // AI/ML Questions
+  {
+    id: 'q-ml-1',
+    question: 'What is overfitting and how can you prevent it?',
+    category: 'AI/ML',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'Overfitting occurs when a model learns training data too well including noise, reducing generalization. Prevention techniques: cross-validation, regularization, dropout, early stopping, and more training data.',
+    keywords: ['overfitting', 'generalization', 'validation', 'regularization', 'dropout', 'training data'],
+    explanation: 'Essential concept in machine learning model development.',
+  },
+  {
+    id: 'q-ml-2',
+    question: 'What is the difference between supervised and unsupervised learning?',
+    category: 'AI/ML',
+    difficulty: 'Beginner',
+    sampleAnswer: 'Supervised learning uses labeled data to train models (regression, classification). Unsupervised learning finds patterns in unlabeled data (clustering, dimensionality reduction).',
+    keywords: ['supervised', 'unsupervised', 'labeled', 'unlabeled', 'classification', 'clustering'],
+    explanation: 'Fundamental machine learning concepts.',
+  },
+
+  // HR Questions
+  {
+    id: 'q-hr-1',
+    question: 'Tell me about yourself and why you\'re interested in this role.',
+    category: 'HR',
+    difficulty: 'Beginner',
+    sampleAnswer: 'I am a [year] student of [branch] from [college]. I am passionate about [technology/field]. I\'ve completed [projects/internships], and I\'m looking to apply my skills and learn from industry experts.',
+    keywords: ['student', 'passionate', 'projects', 'skills', 'learning', 'contribute'],
+    explanation: 'Important for making a good first impression.',
+  },
+  {
+    id: 'q-hr-2',
+    question: 'What are your strengths and weaknesses?',
+    category: 'HR',
+    difficulty: 'Beginner',
+    sampleAnswer: 'Strengths: Problem-solving, team collaboration, continuous learning. Weaknesses: I sometimes over-focus on details (but I\'m working to balance it), or I\'m still learning [specific technology].',
+    keywords: ['strengths', 'weaknesses', 'honesty', 'improvement', 'learning', 'collaboration'],
+    explanation: 'Tests self-awareness and honesty.',
+  },
+  {
+    id: 'q-hr-3',
+    question: 'Describe a challenging project and how you overcame it.',
+    category: 'HR',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'In my [project], I faced [challenge]. I approached it by [strategy], collaborated with [team/resources], and successfully [result]. I learned [lesson].',
+    keywords: ['challenge', 'solution', 'overcame', 'learned', 'collaborated', 'result'],
+    explanation: 'Demonstrates problem-solving and resilience.',
+  },
+  {
+    id: 'q-hr-4',
+    question: 'Why should we hire you?',
+    category: 'HR',
+    difficulty: 'Intermediate',
+    sampleAnswer: 'I bring strong technical skills in [technologies], proven ability to learn quickly, and genuine enthusiasm for the role. I\'ve demonstrated this through [specific example]. I\'m committed to contributing value and growing with your team.',
+    keywords: ['skills', 'learn', 'enthusiasm', 'value', 'example', 'growth'],
+    explanation: 'Opportunity to make a compelling case.',
+  },
+];
